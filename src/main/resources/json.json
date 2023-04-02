@@ -1,0 +1,32 @@
+{
+  "fruits": [
+    {
+      "type": "Apple",
+      "weight": 2.5,
+      "price": 120,
+      "name": "Apple",
+      "freshness": "FRESH"
+    },
+    {
+      "type": "Banana",
+      "weight": 3.5,
+      "price": 140,
+      "name": "Banana",
+      "freshness": "FRESH"
+    },
+    {
+      "type": "Orange",
+      "weight": 2.1,
+      "price": 110,
+      "name": "Orange",
+      "freshness": "FRESH"
+    },
+    {
+      "type": "Pineapple",
+      "weight": 4.1,
+      "price": 340,
+      "name": "Pineapple",
+      "freshness": "FRESH"
+    }
+  ]
+}
