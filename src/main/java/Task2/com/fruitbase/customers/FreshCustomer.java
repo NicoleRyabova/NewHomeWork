@@ -32,5 +32,4 @@ public class FreshCustomer extends Customer {
         cargo.setFruits(newListofFruit.toArray(Fruit[]::new));
 
     }
-
 }
