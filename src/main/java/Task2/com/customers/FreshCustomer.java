@@ -1,7 +1,7 @@
-package Task2.com.fruitbase.customers;
+package Task2.com.customers;
 
-import Task2.com.fruitbase.Cargo;
-import Task2.com.fruitbase.fruits.Fruit;
+import Task2.com.fruitbase.Delivery;
+import Task2.com.fruits.Fruit;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -15,7 +15,7 @@ public class FreshCustomer extends Customer {
     }
 
     @Override
-    public void chooseFruit(Cargo cargo) {
+    public void chooseFruit(Delivery cargo) {
         Fruit[] fruitArray = cargo.getFruits();
         List<Fruit> fruitArrayWithFreshFruits = new ArrayList<>();
 

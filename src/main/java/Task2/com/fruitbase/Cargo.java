@@ -1,13 +1,13 @@
 package Task2.com.fruitbase;
 
 
-import Task2.com.fruitbase.fruits.Fruit;
+import Task2.com.fruits.Fruit;
 
 import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.stream.Stream;
 
-public class Cargo {
+public class Cargo implements Delivery{
     public void setFruits(Fruit[] fruits) {
         this.fruits = fruits;
     }
@@ -16,6 +16,11 @@ public class Cargo {
 
     public Fruit[] getFruits() {
         return fruits;
+    }
+
+    @Override
+    public void removeFruit(Fruit fruit) {
+
     }
 
     public Cargo() {
@@ -34,7 +39,7 @@ public class Cargo {
                 .sum());
     }
 
-    void addFruit(Fruit fruit) {
+    public void addFruit(Fruit fruit) {
         fruits = mergeArrays(fruit);
 
     }

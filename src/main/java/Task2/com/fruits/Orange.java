@@ -1,10 +1,10 @@
-package Task2.com.fruitbase.fruits;
+package Task2.com.fruits;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 
 import java.math.BigDecimal;
-@JsonDeserialize(as = Pineapple.class)
-public class Pineapple extends Fruit {
+@JsonDeserialize(as = Orange.class)
+public class Orange extends Fruit {
 
     @Override
     public double getWeight() {
@@ -21,10 +21,10 @@ public class Pineapple extends Fruit {
         return this.name;
     }
 
-    public Pineapple() {
+    public Orange() {
         freshness = Freshness.FRESH;
-        weight = 4.1;
-        price = new BigDecimal(340);
-        name = "Pineapple";
+        weight = 2.1;
+        price = new BigDecimal(110);
+        name = "Orange";
     }
 }

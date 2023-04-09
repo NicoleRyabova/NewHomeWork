@@ -1,4 +1,4 @@
-package Task2.com.fruitbase.fruits;
+package Task2.com.fruits;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonSubTypes;

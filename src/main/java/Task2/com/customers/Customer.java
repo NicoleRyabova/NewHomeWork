@@ -1,21 +1,21 @@
-package Task2.com.fruitbase.customers;
+package Task2.com.customers;
 
-import Task2.com.fruitbase.Cargo;
-import Task2.com.fruitbase.fruits.Fruit;
+import Task2.com.fruitbase.Delivery;
+import Task2.com.fruits.Fruit;
 
 import java.util.Arrays;
 import java.util.stream.Stream;
 
 public abstract class Customer {
     protected Fruit[] purchases;
-    private String name;
+    String name;
 
     public Customer(String name) {
         purchases = new Fruit[]{};
         this.name = name;
     }
 
-    public abstract void chooseFruit(Cargo cargo);
+    public abstract void chooseFruit(Delivery cargo);
 
     public void printPurchases() {
         for (Fruit fruit : purchases) {

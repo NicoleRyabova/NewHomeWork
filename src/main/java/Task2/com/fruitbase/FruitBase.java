@@ -10,8 +10,7 @@
 //
 package Task2.com.fruitbase;
 
-
-import Task2.com.fruitbase.fruits.Fruit;
+import Task2.com.fruits.Fruit;
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -28,9 +27,9 @@ public class FruitBase {
         fruitCatalogue = new FruitCatalogue();
     }
 
-    public Cargo takeOrder(String order) {
+    public Delivery takeOrder(String order) {
         List<Fruit> rightFruits = new ArrayList<>();
-        Cargo cargo = new Cargo();
+        Delivery cargo = new Cargo();
 
         for (String nameFruit : order.split(" ")) {
             Fruit fruit = fruitCatalogue.findFruit(nameFruit);

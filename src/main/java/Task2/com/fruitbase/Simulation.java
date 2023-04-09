@@ -10,9 +10,9 @@
 //   расчитаны согласно экспортированному каталогу.
 package Task2.com.fruitbase;
 
-import Task2.com.fruitbase.customers.Customer;
-import Task2.com.fruitbase.customers.FreshCustomer;
-import Task2.com.fruitbase.customers.UniqueCustomer;
+import Task2.com.customers.Customer;
+import Task2.com.customers.FreshCustomer;
+import Task2.com.customers.UniqueCustomer;
 
 import java.io.IOException;
 import java.util.List;
@@ -42,7 +42,7 @@ public class Simulation {
         }
 
         for (Customer customer : customers) {
-            Cargo cargo = fruitBase.takeOrder(line);
+            Delivery cargo = fruitBase.takeOrder(line);
             System.out.println(cargo);
             customer.chooseFruit(cargo);
             customer.printPurchases();

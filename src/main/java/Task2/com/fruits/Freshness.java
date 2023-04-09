@@ -1,4 +1,4 @@
-package Task2.com.fruitbase.fruits;
+package Task2.com.fruits;
 
 public enum Freshness {
     FRESH,
