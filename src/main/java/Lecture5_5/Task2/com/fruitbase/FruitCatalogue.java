@@ -1,0 +1,21 @@
+package Lecture5_5.Task2.com.fruitbase;
+
+
+import Lecture5_5.Task2.com.fruits.*;
+
+public class FruitCatalogue {
+    Fruit[] fruits;
+
+    public FruitCatalogue() {
+        fruits = new Fruit[]{new Apple(), new Banana(), new Orange(), new Pineapple()};
+    }
+
+    public Fruit findFruit(String fruit) {
+        for (int i = 0; i < fruits.length; i++) {
+            if (fruit.equalsIgnoreCase(fruits[i].getName())) {
+                return fruits[i];
+            }
+        }
+        return null;
+    }
+}
